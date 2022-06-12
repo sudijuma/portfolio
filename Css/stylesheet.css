@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
 html {
@@ -8,6 +9,33 @@ html {
 }
 
 body {
-    padding: 0;
-    margin: 0;
+    background-image: url(/Uploads/images/Background-images/full-bloom.png);
+    background-size: 8%;
+    max-width: 1440px;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+}
+
+.headline {
+    padding: 24px;
+    font-size: x-large;
+}
+
+.intro-image-text-container {
+    padding: 24px;
+    max-width: 600px;
+}
+
+.intro-image-container {
+    flex-basis: 33%;
+    border: 1px solid black;
+    background-color: teal;
+}
+
+.intro-text-container {
+    font-style: italic;
+    line-height: 16px;
 }
