@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0 auto;
+    padding: 0;
 }
 
 html {
@@ -13,12 +14,13 @@ body {
     padding: 0;
     margin: 0 auto;
     background-color: black;
-    /* background-image: url(/Uploads/images/Background-images/full-bloom.png); */
+    background-image: url(/Uploads/images/Background-images/full-bloom.png);
     background-size: 8%;
     max-width: 1440px;
 }
 
 .headline {
+    color: black;
     padding: 24px;
     font-size: x-large;
     width: fit-content;
@@ -46,7 +48,6 @@ body {
     padding: 4px;
     max-width: 350px;
     background-color: teal;
-    border: solid 4px black;
     border-radius: 10px;
 }
 
@@ -66,21 +67,23 @@ body {
     background: linear-gradient(teal, #9198e5);
 }
 
-.break {
+.flexbox-items {
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin: 64px auto;
-    padding: 64px;
+    margin-top: 100px;
+    max-width: 1920px;
 }
 
-.project-card-container {
+.info-box {
     display: flex;
     position: relative;
     text-align: center;
-    min-width: 33.33%;
-    max-height: auto;
+    margin: 40px;
+    max-width: 555px;
+    max-height: 483px;
 }
 
 .project-image {
@@ -89,8 +92,25 @@ body {
 }
 
 .text-container {
-    align-self: center;
-    width: 350px;
-    font-size: 2.5rem;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    font-size: 1.5rem;
     color: white;
+    background-color: black;
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.github-link {
+    text-decoration: none;
+    color: white;
+}
+
+.short-description {
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 8px;
+    color: black;
 }
