@@ -11,7 +11,7 @@ html {
 
 body {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     background-color: black;
     /* background-image: url(/Uploads/images/Background-images/full-bloom.png); */
     background-size: 8%;
@@ -60,39 +60,37 @@ body {
     display: block;
 }
 
-.projects {
+.break {
+    width: 100%;
+    height: fit-content;
+    background: linear-gradient(teal, #9198e5);
+}
+
+.break {
     display: flex;
-    background-image: url(/Uploads/images/Background-images/webb-dark.png);
-    background-size: 25%;
-    height: 800px;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    margin: 64px auto;
+    padding: 64px;
 }
 
-.project-container {
-    margin-top: 40px;
-    height: 450px;
-    max-width: 650px;
-    border: solid 1px white;
-    padding: 16px;
-    overflow: hidden;
+.project-card-container {
+    display: flex;
+    position: relative;
+    text-align: center;
+    min-width: 33.33%;
+    max-height: auto;
 }
 
-.specific-project-container {
-    border: solid 1px white;
-    max-width: 550px;
-    height: 250px;
-    padding: 8px;
+.project-image {
+    width: 100%;
+    height: auto;
 }
 
-.project-screenshot-container {
-    width: 250px;
-    height: 250px;
-}
-
-.project-image{
-    max-width: 350px;
-    object-fit: cover;
-}
-
-.project-info-container {
-    max-width: 250px;
+.text-container {
+    align-self: center;
+    width: 350px;
+    font-size: 2.5rem;
+    color: white;
 }
