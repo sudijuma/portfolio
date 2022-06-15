@@ -86,6 +86,10 @@ body {
     max-height: 483px;
 }
 
+.image-container {
+    height: 250px;
+}
+
 .project-image {
     width: 100%;
     height: auto;
